@@ -38,6 +38,7 @@
 		358902571DA9E8A4004FC65B /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 358902451DA9E8A4004FC65B /* UIImageView+HighlightedWebCache.m */; };
 		358902581DA9E8A4004FC65B /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 358902471DA9E8A4004FC65B /* UIImageView+WebCache.m */; };
 		358902591DA9E8A4004FC65B /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 358902491DA9E8A4004FC65B /* UIView+WebCacheOperation.m */; };
+		35C7D3E51DA9EB8D00C45ABB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C7D3E41DA9EB8D00C45ABB /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +123,10 @@
 		358902471DA9E8A4004FC65B /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		358902481DA9E8A4004FC65B /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		358902491DA9E8A4004FC65B /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		35C7D3E31DA9EB8D00C45ABB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		35C7D3E41DA9EB8D00C45ABB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		35C7D3E61DA9EBBA00C45ABB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		35C7D3E71DA9ECC000C45ABB /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				358901CA1DA9DDF4004FC65B /* Home */,
+				35C7D3DE1DA9EB6400C45ABB /* Public */,
 				358901991DA9DD4D004FC65B /* AppDelegate.h */,
 				3589019A1DA9DD4D004FC65B /* AppDelegate.m */,
 				3589019F1DA9DD4D004FC65B /* Main.storyboard */,
@@ -189,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				358901971DA9DD4D004FC65B /* main.m */,
+				35C7D3E61DA9EBBA00C45ABB /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -214,6 +221,7 @@
 		358901C91DA9DDE8004FC65B /* ThirdLib */ = {
 			isa = PBXGroup;
 			children = (
+				35C7D3E71DA9ECC000C45ABB /* Reveal.framework */,
 				358902281DA9E8A4004FC65B /* SDWebImage */,
 				358902211DA9E54D004FC65B /* MBProgressHUD */,
 				3589020D1DA9E4D9004FC65B /* AFNetworking */,
@@ -321,6 +329,47 @@
 				358902491DA9E8A4004FC65B /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		35C7D3DE1DA9EB6400C45ABB /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				35C7D3DF1DA9EB6400C45ABB /* Category */,
+				35C7D3E01DA9EB6400C45ABB /* Controller */,
+				35C7D3E11DA9EB6400C45ABB /* Model */,
+				35C7D3E21DA9EB6400C45ABB /* View */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		35C7D3DF1DA9EB6400C45ABB /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				35C7D3E31DA9EB8D00C45ABB /* UIView+Extension.h */,
+				35C7D3E41DA9EB8D00C45ABB /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		35C7D3E01DA9EB6400C45ABB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		35C7D3E11DA9EB6400C45ABB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		35C7D3E21DA9EB6400C45ABB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,6 +526,7 @@
 				3589024F1DA9E8A4004FC65B /* SDWebImageDownloader.m in Sources */,
 				358902541DA9E8A4004FC65B /* UIImage+GIF.m in Sources */,
 				3589021B1DA9E4D9004FC65B /* AFHTTPSessionManager.m in Sources */,
+				35C7D3E51DA9EB8D00C45ABB /* UIView+Extension.m in Sources */,
 				358901981DA9DD4D004FC65B /* main.m in Sources */,
 				3589021D1DA9E4D9004FC65B /* AFSecurityPolicy.m in Sources */,
 				358902571DA9E8A4004FC65B /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -632,8 +682,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RD7J4DU62A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdLib",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoGoTalkSystem/PrefixHeader.pch";
 				INFOPLIST_FILE = GoGoTalkSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gogo-talk.GoGoTalkSystem";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -644,8 +705,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RD7J4DU62A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ThirdLib",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GoGoTalkSystem/PrefixHeader.pch";
 				INFOPLIST_FILE = GoGoTalkSystem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+					"-framework",
+					Reveal,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.gogo-talk.GoGoTalkSystem";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -720,6 +792,7 @@
 				358901C21DA9DD4E004FC65B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		358901C31DA9DD4E004FC65B /* Build configuration list for PBXNativeTarget "GoGoTalkSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -728,6 +801,7 @@
 				358901C51DA9DD4E004FC65B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		358901C61DA9DD4E004FC65B /* Build configuration list for PBXNativeTarget "GoGoTalkSystemUITests" */ = {
 			isa = XCConfigurationList;
@@ -736,6 +810,7 @@
 				358901C81DA9DD4E004FC65B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
